@@ -1,7 +1,12 @@
 import { MouseEvent } from 'react';
 import './App.css';
-import Button from './components/Button/Button';
-import Input from './components/Input/Input';
+import {Button} from './components/Button/Button';
+import {Input} from './components/Input/Input';
+import { Link } from 'react-router-dom';
+
+
+
+
 
 function App() {
 
@@ -13,8 +18,14 @@ function App() {
 
 	return (
 		<>
-			<Button onClick={addCounter}>BTN</Button>
-			<Input/>
+			<Button onClick={addCounter}>Применить</Button>
+			<Button appearence='big' onClick={addCounter}>Оформить</Button>
+			<Input placeholder='Email'/>
+			<div>
+				<Link to='/'>Menu</Link>
+				<Link to='/cart'>Корзина</Link>
+			</div>
+			
 		</>
 	);
 }

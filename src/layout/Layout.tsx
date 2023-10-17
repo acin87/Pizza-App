@@ -5,7 +5,6 @@ import cn from 'classnames';
 
 export function Layout(){
 
-
 	return (
 		<div className={styles['layout']}>
 			<div className={styles['sidebar']}>
@@ -35,6 +34,5 @@ export function Layout(){
 				<Outlet/>
 			</div>
 		</div>
-		
 	);
 }
